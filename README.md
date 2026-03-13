@@ -72,6 +72,25 @@ show malignant samples, while (c) and (d) represent benign ones. ViT outperforms
 most cases. While the ViT misclassified some patches in (b) and (c), their impact was mitigated by Grad-CAM++ saliency scores. The proposed method
 refines WSI classification by heavily weighting diagnostically important regions and de-emphasizing less critical areas.
 
+## SSL Embeddings & Synthetic Data Generation
+
+1. To have a better understanding of how to deal with a patch-level dataset and create metadata for a class dataset, and also generate patch-level saliency scores from Grad-CAM++, please follow Grad-CAM++/Densenet_Grad-CAM-Full_Batch1_GradCAM++.ipynb
+2. Then simply run the main.py file
+
+
+1. **Self-Supervised Feature Extraction with DINO**  
+   Fine-tune the dataset using the **DINO framework** from [facebookresearch/dino](https://github.com/facebookresearch/dino) with the parameters described in the paper.  
+   After finetuning, use the teacher network to **extract embeddings for each patch**.
+
+2. **Latent Diffusion Model (LDM) Pretraining**  
+   Follow the official instructions from the LDM repository [https://github.com/CompVis/latent-diffusion] to obtain **pretrained models** and guidance for training and evaluating the LDM and VAE.
+
+3. **Variational Autoencoder (VAE)**  
+   Use the recommended VAE from [cvlab-stonybrook/PathLDM](https://github.com/cvlab-stonybrook/PathLDM) to encode the patch representations.
+
+4. **Training and Synthetic Patch Generation**  
+   Follow [cvlab-stonybrook/Large-Image-Diffusion](https://github.com/cvlab-stonybrook/Large-Image-Diffusion) for using the embeddings to train the LDM and generate synthetic DUV patches. configs can be found here configs/LDM_vq_4.yaml
+
 
 ## Installation & Requirements
 
