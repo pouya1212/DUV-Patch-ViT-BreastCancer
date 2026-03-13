@@ -3,6 +3,7 @@
 This repository implements the framework proposed in:
 
 *Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework*  
+[PDF_Link_IEEE](https://ieeexplore.ieee.org/abstract/document/11253275)
 [PDF link](https://www.researchgate.net/publication/398306055_Breast_Cancer_Classification_in_Deep_Ultraviolet_Fluorescence_Images_Using_a_Patch-Level_Vision_Transformer_Framework)
 
 
@@ -54,21 +55,56 @@ A patch-level Vision Transformer (ViT) framework is employed to address the chal
 
 6. Fuse patch-level predictions with Grad-CAM++ weights to obtain the final WSI-level classification.
 
-## **Repository Structure**
+## Installation & Requirements
 
-- `data/`: DUV images and generated patches.  
-- `configs/`: Training configuration files for ViT and synthetic patch generation.  
-- `models/`: Vision Transformer and ResNet backbone.  
-- `notebooks/`: Jupyter notebooks for experiments and analysis.  
-- `scripts/`: Scripts for training, validation, and inference.  
-- `results/`: Outputs including Grad-CAM++ visualizations.  
-- `requirements.txt`: Python dependencies.  
+Clone the repository:
+
+git clone https://github.com/pouya12/ssl-guided-ldm-duv-breast-cancer.git
+cd ssl-guided-ldm-duv-breast-cancer
+
+Install required dependencies:
+
+pip install -r requirements.txt
 
 ---
 
-## **Installation**
+## Dataset
 
-```bash
-git clone https://github.com/your-username/DUV-Patch-ViT-BreastCancer.git
-cd DUV-Patch-ViT-BreastCancer
-pip install -r requirements.txt
+The dataset includes **142 DUV WSIs** (58 benign, 84 malignant) collected from the **Medical College of Wisconsin**. 
+
+![WSIs](figures/WSIs.png)
+
+A total of **172,984 non-overlapping 400×400 patches** were extracted:
+- 48,619 malignant patches  
+- 124,365 benign patches
+
+![Real Patches](figures/Patches.png)
+
+Patch labels were obtained from pathologist annotations.
+
+> **Note:** Researchers interested in accessing the dataset may contact the Medical College of Wisconsin and Marquette University for potential collaboration or data sharing.
+> ---
+## Acknowledgements
+
+The Vision Transformer (ViT) implementation used in this repository is adapted from the following open-source project:
+
+https://github.com/jeonsworld/ViT-pytorch
+
+The original implementation was modified to support loading pretrained models trained on large-scale public datasets and to integrate them into our training pipeline for DUV-FSM breast cancer classification.
+---
+## Citation
+
+If you find this work useful, please cite:
+
+```bibtex
+@INPROCEEDINGS{11253275,
+  author={Afshin, Pouya and Helminiak, David and Lu, Tongtong and Yen, Tina and Jorns, Julie M. and Patton, Mollie and Yu, Bing and Ye, Dong Hye},
+  booktitle={2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, 
+  title={Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-6},
+  keywords={Deep learning;Computer vision;Accuracy;Computational modeling;Surgery;Fluorescence;Transformers;Feature extraction;Breast cancer;Computational efficiency},
+  doi={10.1109/EMBC58623.2025.11253275}}
+
