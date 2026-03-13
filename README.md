@@ -5,6 +5,8 @@ This repository implements the framework proposed in:
 *Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework*  
 [PDF link](https://www.researchgate.net/publication/398306055_Breast_Cancer_Classification_in_Deep_Ultraviolet_Fluorescence_Images_Using_a_Patch-Level_Vision_Transformer_Framework)
 
+![WSI](figures/WSI_Project.png)
+
 ---
 
 ## **Authors & Affiliations**
