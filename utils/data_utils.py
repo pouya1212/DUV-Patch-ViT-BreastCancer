@@ -128,6 +128,7 @@ def get_loader(args, trainset, valset, testset, all_trainin_validation_set):
                              num_workers=4,
                              pin_memory=True)
 
+    #tune_loader is part of dataset which is used for finding the binary threshold based on the training data on the test set
     tune_loader = DataLoader(all_trainin_validation_set,
                              sampler=all_trainin_validation_sampler,
                              batch_size=args.eval_batch_size,
