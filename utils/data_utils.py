@@ -97,48 +97,10 @@ class TumorImageDataset(Dataset):
 
 
 
-def get_loader(args):
+def get_loader(args, trainset, valset, testset, all_trainin_validation_set):
+    
     if args.local_rank not in [-1, 0]:
         torch.distributed.barrier()
-    
-    # Define the transformations
-    transform_bn = transforms.Compose([
-        transforms.Resize((args.img_size, args.img_size)),    
-        transforms.ToTensor(),
-        transforms.Normalize(mean=[0.5, 0.5, 0.5], std=[0.5, 0.5, 0.5])
-    ])  
-    
-    # Only load the tumor dataset if args.dataset is set to "tumor"
-    if args.dataset == "tumor":
-        true_labels = '/data/users4/pafshin1/My_Projects/RANDS/DATA/BLOCKS/INPUT_BLOCKS/metadata_output.csv'
-        patch_dir = '/data/users4/pafshin1/My_Projects/RANDS/DATA/BLOCKS/INPUT_BLOCKS'
-        dataset = TumorImageDataset(csv_file=true_labels, root_dir=patch_dir, transform=transform_bn)
-        
-        # Total size of the dataset
-        total_size = len(dataset)
-        
-        # Define 70/15/15 split sizes
-        train_size = int(0.64 * total_size)   # 70% for training
-        val_size = int(0.16 * total_size)    # 15% for validation
-        test_size = total_size - train_size - val_size  # Remaining for test (15%)
-        
-        # Randomly shuffle the dataset indices
-        indices = np.arange(total_size)
-        np.random.shuffle(indices)
-        
-        # Split indices into train, val, and test sets
-        train_indices = indices[:train_size]
-        val_indices = indices[train_size:train_size + val_size]
-        test_indices = indices[train_size + val_size:]
-        
-        # Create subsets for train, validation, and test
-        trainset = torch.utils.data.Subset(dataset, train_indices)
-        valset = torch.utils.data.Subset(dataset, val_indices)
-        testset = torch.utils.data.Subset(dataset, test_indices)
-        
-    
-    else:
-        raise ValueError(f"Dataset '{args.dataset}' is not supported. Please set `args.dataset` to 'tumor'.")
     
     if args.local_rank == 0:
         torch.distributed.barrier()
@@ -146,6 +108,7 @@ def get_loader(args):
     train_sampler = RandomSampler(trainset) if args.local_rank == -1 else DistributedSampler(trainset)
     val_sampler = SequentialSampler(valset)
     test_sampler = SequentialSampler(testset)
+    all_trainin_validation_sampler = SequentialSampler(all_trainin_validation_set)
 
     train_loader = DataLoader(trainset,
                               sampler=train_sampler,
@@ -165,4 +128,10 @@ def get_loader(args):
                              num_workers=4,
                              pin_memory=True)
 
-    return train_loader, val_loader, test_loader
+    tune_loader = DataLoader(all_trainin_validation_set,
+                             sampler=all_trainin_validation_sampler,
+                             batch_size=args.eval_batch_size,
+                             num_workers=4,
+                             pin_memory=True)                         
+
+    return train_loader, val_loader, test_loader, tune_loader
