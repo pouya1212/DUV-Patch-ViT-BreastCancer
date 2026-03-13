@@ -97,14 +97,14 @@ The original implementation was modified to support loading pretrained models tr
 If you find this work useful, please cite:
 
 ```bibtex
-@INPROCEEDINGS{11253275,
-  author={Afshin, Pouya and Helminiak, David and Lu, Tongtong and Yen, Tina and Jorns, Julie M. and Patton, Mollie and Yu, Bing and Ye, Dong Hye},
-  booktitle={2025 47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC)}, 
-  title={Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework}, 
-  year={2025},
-  volume={},
-  number={},
-  pages={1-6},
-  keywords={Deep learning;Computer vision;Accuracy;Computational modeling;Surgery;Fluorescence;Transformers;Feature extraction;Breast cancer;Computational efficiency},
-  doi={10.1109/EMBC58623.2025.11253275}}
-
+@inproceedings{afshin2025duvvit,
+  author    = {Pouya Afshin and David Helminiak and Tongtong Lu and Tina Yen and 
+               Julie M. Jorns and Mollie Patton and Bing Yu and Dong Hye Ye},
+  title     = {Breast Cancer Classification in Deep Ultraviolet Fluorescence Images 
+               Using a Patch-Level Vision Transformer Framework},
+  booktitle = {Proceedings of the 47th Annual International Conference of the 
+               IEEE Engineering in Medicine and Biology Society (EMBC)},
+  year      = {2025},
+  pages     = {1--6},
+  doi       = {10.1109/EMBC58623.2025.11253275}
+}
