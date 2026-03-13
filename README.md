@@ -56,6 +56,10 @@ A patch-level Vision Transformer (ViT) framework is employed to address the chal
 
 6. Fuse patch-level predictions with Grad-CAM++ weights to obtain the final WSI-level classification.
 
+# Qualititaive Results
+
+![Results](figures/Results.png)
+
 ## Installation & Requirements
 
 Clone the repository:
