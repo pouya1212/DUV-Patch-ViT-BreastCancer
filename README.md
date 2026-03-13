@@ -75,6 +75,7 @@ show malignant samples, while (c) and (d) represent benign ones. ViT outperforms
 most cases. While the ViT misclassified some patches in (b) and (c), their impact was mitigated by Grad-CAM++ saliency scores. The proposed method
 refines WSI classification by heavily weighting diagnostically important regions and de-emphasizing less critical areas.
 
+![patch-level-predictions](figures/patch-level-predictions.png)
 ## Running 
 
 1. To have a better understanding of how to deal with a patch-level dataset and create metadata for a class dataset, and also generate patch-level saliency scores from Grad-CAM++, please follow Grad-CAM++/Densenet_Grad-CAM-Full_Batch1_GradCAM++.ipynb
