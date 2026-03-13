@@ -77,7 +77,7 @@ refines WSI classification by heavily weighting diagnostically important regions
 
 Clone the repository:
 
-git clone https://github.com/pouya12/ssl-guided-ldm-duv-breast-cancer.git
+git clone https://github.com/pouya12/DUV-Patch-ViT-BreastCancer
 cd ssl-guided-ldm-duv-breast-cancer
 
 Install required dependencies:
