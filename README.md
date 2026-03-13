@@ -6,6 +6,13 @@ This repository implements the framework proposed in:
 [PDF_Link_IEEE](https://ieeexplore.ieee.org/abstract/document/11253275)
 [PDF link](https://www.researchgate.net/publication/398306055_Breast_Cancer_Classification_in_Deep_Ultraviolet_Fluorescence_Images_Using_a_Patch-Level_Vision_Transformer_Framework)
 
+Currently, the related code repository from our group is available at:
+
+https://github.com/Yatagarasu50469/RANDS
+
+In addition, we are sharing earlier versions of Dataset 1 through Hugging Face:
+
+https://huggingface.co/datasets/BLISS-MU/DDSM
 
 ---
 
