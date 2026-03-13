@@ -1,10 +1,13 @@
 # Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework
 
-This repository implements the framework proposed in:
+This repository implements the framework proposed in the paper:
 
-*Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework*  
-[PDF_Link_IEEE](https://ieeexplore.ieee.org/abstract/document/11253275)
-[PDF link](https://www.researchgate.net/publication/398306055_Breast_Cancer_Classification_in_Deep_Ultraviolet_Fluorescence_Images_Using_a_Patch-Level_Vision_Transformer_Framework)
+*Breast Cancer Classification in Deep Ultraviolet Fluorescence Images Using a Patch-Level Vision Transformer Framework*
+
+Accepted at the **47th Annual International Conference of the IEEE Engineering in Medicine and Biology Society (EMBC 2025)**, Copenhagen, Denmark (https://embc.embs.org/2025/about/).
+
+[IEEE PDF](https://ieeexplore.ieee.org/abstract/document/11253275)  
+[ResearchGate PDF](https://www.researchgate.net/publication/398306055_Breast_Cancer_Classification_in_Deep_Ultraviolet_Fluorescence_Images_Using_a_Patch-Level_Vision_Transformer_Framework)
 
 Currently, the related code repository from our group is available at:
 
