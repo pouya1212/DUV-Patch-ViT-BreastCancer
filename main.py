@@ -59,6 +59,7 @@ from sklearn.metrics import (
 
 # Custom modules
 from utils.data_utils import TumorImageDataset, get_loader
+from utils.metrics import AverageMeter, simple_accuracy, compute_wsi_metrics
 from models.modeling import VisionTransformer, CONFIGS
 from utils.scheduler import WarmupLinearSchedule, WarmupCosineSchedule
 from utils.dist_util import get_world_size
