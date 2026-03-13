@@ -9,7 +9,7 @@ This repository implements the framework proposed in:
 
 ## **Authors & Affiliations**
 
-**Pouya Afshin¹, David Helminiak², Tongtong Lu³, Tina Yen⁴, Julie M. Jorns⁵, Mollie Patton⁵, Bing Yu³, Dong Hye Ye¹†**  
+**Pouya Afshin, David Helminiak, Tongtong Lu, Tina Yen, Julie M. Jorns, Mollie Patton, Bing Yu, Dong Hye Ye 
 
 1. Department of Computer Science, Georgia State University  
 2. Department of Electrical and Computer Engineering, Marquette University  
@@ -17,7 +17,9 @@ This repository implements the framework proposed in:
 4. Department of Surgery, Medical College of Wisconsin  
 5. Department of Pathology, Medical College of Wisconsin  
 
-†Corresponding author
+![Universities](figures/Univerisities.png)
+
+
 
 ---
 
