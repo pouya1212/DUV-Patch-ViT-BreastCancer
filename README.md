@@ -26,6 +26,7 @@ This repository implements the framework proposed in:
 ## **Project Overview**
 
 Breast-conserving surgery (BCS) requires removing malignant tissue while preserving healthy tissue.  
+![BCS](figures/BCS.png)
 This project uses a deep ultraviolet fluorescence scanning microscope (DUV-FSM) to acquire whole-slide images (WSIs).  
 A patch-level Vision Transformer (ViT) captures both local and global features to classify patches as benign or malignant. Grad-CAM++ is applied for explainability.
 
