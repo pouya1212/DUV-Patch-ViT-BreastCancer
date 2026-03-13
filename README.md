@@ -56,9 +56,15 @@ A patch-level Vision Transformer (ViT) framework is employed to address the chal
 
 6. Fuse patch-level predictions with Grad-CAM++ weights to obtain the final WSI-level classification.
 
-# Qualititaive Results
+# Qualitative Results
 
 ![Results](figures/Results.png)
+
+Visualization of DUV WSIs with their corresponding H&E images, Grad-CAM++ saliency maps, and Patch-level predictions. Cases (a) and (b)
+show malignant samples, while (c) and (d) represent benign ones. ViT outperforms CNNs in patch-level predictions, accurately determining patch labels in
+most cases. While the ViT misclassified some patches in (b) and (c), their impact was mitigated by Grad-CAM++ saliency scores. The proposed method
+refines WSI classification by heavily weighting diagnostically important regions and de-emphasizing less critical areas.
+
 
 ## Installation & Requirements
 
