@@ -77,7 +77,7 @@ refines WSI classification by heavily weighting diagnostically important regions
 
 Clone the repository:
 
-git clone https://github.com/pouya12/DUV-Patch-ViT-BreastCancer
+git clone https://github.com/pouya1212/DUV-Patch-ViT-BreastCancer
 cd DUV-Patch-ViT-BreastCancer
 
 Install required dependencies:
