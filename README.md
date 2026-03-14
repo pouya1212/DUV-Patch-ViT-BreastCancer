@@ -76,6 +76,7 @@ most cases. While the ViT misclassified some patches in (b) and (c), their impac
 refines WSI classification by heavily weighting diagnostically important regions and de-emphasizing less critical areas.
 
 ![patch-level-predictions](figures/patch-level-predictions.png)
+
 ## Running
 
 1. Generate patch-level metadata with Grad-CAM++ ---> To prepare the patch-level dataset, create metadata for your class dataset and generate patch-level saliency scores using Grad-CAM++:
