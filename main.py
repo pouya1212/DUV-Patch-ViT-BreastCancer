@@ -83,8 +83,8 @@ patchdataset = TumorImageDataset(
             resize_size=(224, 224), transform=True)
 
 #Load the CSV file that contains the groundtruth labels of WSI obtained from the ground-truth labels of patches
-wsi_csv_labels1 = "/data/users4/pafshin1/My_Projects/All_Labels/filtered_wsi_labels.csv"
-wsidata_df = pd.read_csv(wsi_csv_labels1)
+# wsi_csv_labels1 = "/data/users4/pafshin1/My_Projects/All_Labels/filtered_wsi_labels.csv"
+# wsidata_df = pd.read_csv(wsi_csv_labels1)
 #The CSV contains all patches information, including the pathologist labels (not binary ones) and the weights obtained by VIT and DenseNet Gradcams
 patch_csv_weights = '/data/users4/pafshin1/Implementation/Vision Transformer/EMBC_Updated_Automatic_Thresholding_Implementation/CSV_Files/metadata_patches_with_grad_cam++_binary_label.csv'
 Binary_Label_patch_csv = patch_csv_weights
