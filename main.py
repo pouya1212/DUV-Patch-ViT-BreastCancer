@@ -90,6 +90,12 @@ patch_csv_weights = '/data/users4/pafshin1/Implementation/Vision Transformer/EMB
 Binary_Label_patch_csv = patch_csv_weights
 meta = pd.read_csv(Binary_Label_patch_csv)
 
+def set_seed(args):
+    random.seed(args.seed)
+    np.random.seed(args.seed)
+    torch.manual_seed(args.seed)
+    if args.n_gpu > 0:
+        torch.cuda.manual_seed_all(args.seed)
 
 def save_plots_for_fold(fold, output_dir, train_losses, train_epoch_losses, val_losses, val_accuracies):
     """
