@@ -103,7 +103,7 @@ cd DUV-Patch-ViT-BreastCancer
 
 Install required dependencies:
 
-pip install -r requirements.txt
+---pip install -r requirements.txt
 
 ---
 
