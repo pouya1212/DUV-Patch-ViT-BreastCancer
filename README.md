@@ -13,9 +13,6 @@ Currently, the related code repository from our group is available at:
 
 https://github.com/Yatagarasu50469/RANDS
 
-In addition, we are sharing earlier versions of Dataset 1 through Hugging Face:
-
-https://huggingface.co/datasets/BLISS-MU/DDSM
 
 ---
 
@@ -122,7 +119,10 @@ A total of **34,468 non-overlapping 400×400 patches** were extracted:
 
 Patch labels were obtained from pathologist annotations.
 
-> **Note:** Researchers interested in accessing the dataset may contact the Medical College of Wisconsin and Marquette University for potential collaboration or data sharing.
+> **Note:** We are sharing earlier versions of Dataset 1 through Hugging Face:
+
+https://huggingface.co/datasets/BLISS-MU/DDSM
+
 > ---
 ## Acknowledgements
 
