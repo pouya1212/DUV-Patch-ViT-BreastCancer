@@ -88,7 +88,9 @@ This will produce: metadata_patches_with_grad_cam++_binary_label.csv --> The CSV
 
 After generating the metadata, simply run:
 
+```
 python3 main.py --model_type ViT-B_16 --fp16 --fp16_opt_level O2
+```
 
 This will start training and evaluation at both the patch and WSI levels using 5-fold cross-validation.
 
