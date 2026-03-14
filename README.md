@@ -73,7 +73,8 @@ most cases. While the ViT misclassified some patches in (b) and (c), their impac
 refines WSI classification by heavily weighting diagnostically important regions and de-emphasizing less critical areas.
 
 ![patch-level-predictions](figures/patch-level-predictions.png)
-Visualization of patch-level predictions overlaid on the WSI images. As shown, the model could distinguish between benign and malignant patches.
+
+Visualization of patch-level predictions overlaid on the WSI images. As shown, the model could distinguish between benign and malignant patches well.
 
 ## Running
 
