@@ -35,7 +35,6 @@ https://github.com/Yatagarasu50469/RANDS
 ## **Project Overview**
 
 
-![BCS](figures/BCS.png)
 
 
 Breast-conserving surgery (BCS) requires removing malignant tissue while preserving healthy tissue.  
