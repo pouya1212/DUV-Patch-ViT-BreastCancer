@@ -78,17 +78,11 @@ refines WSI classification by heavily weighting diagnostically important regions
 ![patch-level-predictions](figures/patch-level-predictions.png)
 ## Running
 
-1. Generate patch-level metadata with Grad-CAM++
-
-To prepare the patch-level dataset, create metadata for your class dataset and generate patch-level saliency scores using Grad-CAM++:
+1. Generate patch-level metadata with Grad-CAM++ ---> To prepare the patch-level dataset, create metadata for your class dataset and generate patch-level saliency scores using Grad-CAM++:
 
 Grad-CAM++/Densenet_Grad-CAM-Full_Batch1_GradCAM++.ipynb
 
-This will produce:
-
-metadata_patches_with_grad_cam++_binary_label.csv
-
-The CSV contains patch information and corresponding Grad-CAM++ saliency scores required by main.py.
+This will produce: metadata_patches_with_grad_cam++_binary_label.csv --> The CSV contains patch information and corresponding Grad-CAM++ saliency scores required by main.py.
 
 2. Run the main training script
 
