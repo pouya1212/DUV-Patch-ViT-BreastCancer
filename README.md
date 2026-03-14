@@ -34,9 +34,11 @@ https://github.com/Yatagarasu50469/RANDS
 
 ## **Project Overview**
 
-Breast-conserving surgery (BCS) requires removing malignant tissue while preserving healthy tissue.  
 
 ![BCS](figures/BCS.png)
+
+
+Breast-conserving surgery (BCS) requires removing malignant tissue while preserving healthy tissue.  
 
 Whole-slide images (WSIs) of excised breast tissue are acquired using a deep ultraviolet fluorescence scanning microscope (DUV-FSM), which provides high-contrast visualization of malignant and normal regions.
 
