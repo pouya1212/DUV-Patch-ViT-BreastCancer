@@ -80,8 +80,9 @@ Visualization of patch-level predictions overlaid on the WSI images. As shown, t
 
 1. Generate patch-level metadata with Grad-CAM++ ---> To prepare the patch-level dataset, create metadata for your class dataset and generate patch-level saliency scores using Grad-CAM++:
 
+```
 Grad-CAM++/Densenet_Grad-CAM-Full_Batch1_GradCAM++.ipynb
-
+```
 This will produce: metadata_patches_with_grad_cam++_binary_label.csv --> The CSV contains patch information and corresponding Grad-CAM++ saliency scores required by main.py.
 
 2. Run the main training script
@@ -100,13 +101,16 @@ This will start training and evaluation at both the patch and WSI levels using 5
 
 Clone the repository:
 
+```
 git clone https://github.com/pouya1212/DUV-Patch-ViT-BreastCancer
 cd DUV-Patch-ViT-BreastCancer
-
+```
 Install required dependencies:
 
+```
 ---pip install -r requirements.txt
 
+```
 ---
 
 ## Dataset
