@@ -91,7 +91,7 @@ python3 main.py --model_type ViT-B_16 --fp16 --fp16_opt_level O2
 
 This will start training and evaluation at both the patch and WSI levels using 5-fold cross-validation.
 
-> **Note:** This is the updated version of the code. Many things have been modified in comparison to the original implementation. The manual binary threshold in the paper is replaced with automatic thresholding based on patches from the training set.
+> **Note:** This is the updated version of the code. Many things have been modified in comparison to the original implementation. The manual binary threshold in the paper has been replaced with automatic thresholding based on patches from the training set.
 
 ## Installation & Requirements
 
