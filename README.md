@@ -34,14 +34,13 @@ https://github.com/Yatagarasu50469/RANDS
 
 ## **Project Overview**
 
+![BCS](figures/BCS.png)
 
 
 
 Breast-conserving surgery (BCS) requires removing malignant tissue while preserving healthy tissue.  
 
 Whole-slide images (WSIs) of excised breast tissue are acquired using a deep ultraviolet fluorescence scanning microscope (DUV-FSM), which provides high-contrast visualization of malignant and normal regions.
-
-
 
 A patch-level Vision Transformer (ViT) framework is employed to address the challenges posed by high-resolution images and complex histopathology. Both local and global features are captured by the model to enable robust breast cancer classification. Additionally, Grad-CAM++ is used to generate saliency-based visualizations that highlight diagnostically relevant regions and enhance interpretability. The approach is evaluated using 5-fold cross-validation, and its performance is shown to surpass conventional deep learning methods, achieving a classification accuracy of 98.33% for distinguishing benign and malignant tissue.
 
