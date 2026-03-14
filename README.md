@@ -36,7 +36,7 @@ https://github.com/Yatagarasu50469/RANDS
 
 Breast-conserving surgery (BCS) requires removing malignant tissue while preserving healthy tissue.  
 
-![BCS](figures/BCS.jpg)
+![BCS](figures/BCS.png)
 
 Whole-slide images (WSIs) of excised breast tissue are acquired using a deep ultraviolet fluorescence scanning microscope (DUV-FSM), which provides high-contrast visualization of malignant and normal regions.
 
