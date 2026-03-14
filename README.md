@@ -92,7 +92,7 @@ After generating the metadata, simply run:
 
 python3 main.py --model_type ViT-B_16 --fp16 --fp16_opt_level O2
 
-This will start training and evaluating at both patch-level and WSI-level using 5-fold cross-validation.
+This will start training and evaluating at both the patch level and the WSI level using 5-fold cross-validation.
 
 
 ## Installation & Requirements
