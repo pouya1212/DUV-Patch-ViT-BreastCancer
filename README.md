@@ -101,7 +101,7 @@ This will start training and evaluation at both the patch and WSI levels using 5
 Clone the repository:
 
 ```
-[git clone https://github.com/pouya1212/DUV-Patch-ViT-BreastCancer](https://github.com/pouya1212/DUV-Patch-ViT-BreastCancer.git)
+git clone https://github.com/pouya1212/DUV-Patch-ViT-BreastCancer](https://github.com/pouya1212/DUV-Patch-ViT-BreastCancer.git
 cd DUV-Patch-ViT-BreastCancer
 ```
 Install required dependencies:
